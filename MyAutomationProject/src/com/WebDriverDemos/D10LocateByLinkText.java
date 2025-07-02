@@ -12,9 +12,13 @@ public class D10LocateByLinkText {
 		driver.manage().window().maximize();
 		
 		driver.get("https://www.google.com");
+
+		driver.findElement(By.name("q")).sendKeys("Nothing to Search");
 		
-		WebElement adLink = driver.findElement(By.linkText("Advertising"));
-		adLink.click();
+		//WebElement adLink = driver.findElement(By.linkText("Advertising"));
+		//adLink.click();
+		
+
 	}
 
 }
