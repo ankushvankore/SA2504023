@@ -16,13 +16,16 @@ public class D16HandlingCheckBox {
 		WebElement chkBox = driver.findElement(By.cssSelector("input[name^=\"chk_altemail\"]"));
 		System.out.println("Before");
 		System.out.println("Selected: " + chkBox.isSelected());
+		System.out.println("Enabled : " + chkBox.isEnabled());
+		System.out.println("Visible : " + chkBox.isDisplayed());
 		
 		if(chkBox.isSelected() == false)
 			chkBox.click();
 		
 		System.out.println("After");
 		System.out.println("Selected: " + chkBox.isSelected());
-		
+		System.out.println("Enabled : " + chkBox.isEnabled());
+		System.out.println("Visible : " + chkBox.isDisplayed());
 	}
 
 }
