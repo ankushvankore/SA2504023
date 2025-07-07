@@ -9,6 +9,7 @@ public class D21HeadlessBrowser {
 	public static void main(String[] args) {
 		ChromeOptions op = new ChromeOptions();
 		op.addArguments("--headless");
+		op.addArguments("--disable-notifications");
 		WebDriver driver = new ChromeDriver(op);
 		driver.manage().window().maximize();
 		
