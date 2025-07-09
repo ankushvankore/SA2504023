@@ -20,7 +20,7 @@ public class D27HandlingMultipleWindows {
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0, 300)", "");
-		//Will scroll the browser window vertically by 100 pixels
+		//Will scroll the browser window vertically by 300 pixels
 		
 		driver.findElement(By.xpath("//span[contains(text(), \"Remote\")]")).click();
 		System.out.println("Title: " + driver.getTitle());
