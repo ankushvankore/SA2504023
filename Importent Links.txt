@@ -1,2 +1,8 @@
 Orange HRM Site
 https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+TestNG Link
+https://testng.org/testng-eclipse-update-site
+
+TestNG Download
+https://testng.org/testng-eclipse-update-site/zipped/7.4.0.202106051955/org.testng.eclipse.updatesite.zip
