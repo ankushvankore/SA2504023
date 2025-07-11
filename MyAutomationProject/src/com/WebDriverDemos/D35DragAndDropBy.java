@@ -29,7 +29,7 @@ public class D35DragAndDropBy {
 		int y = loc.y;
 		
 		//act.dragAndDropBy(slider, x+10, y).perform();
-		act.dragAndDropBy(slider, slider.getLocation().x+10, slider.getLocation().y).perform();
+		act.dragAndDropBy(slider, slider.getLocation().x+1000, slider.getLocation().y).perform();
 	}
 
 }
