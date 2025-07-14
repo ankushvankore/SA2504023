@@ -20,7 +20,7 @@ public class D02OnlineShopping {
 		driver.close();
 	}
 	@Test(priority = 2)
-	public void testTeraBeauty() {
+	public void testTiraBeauty() {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

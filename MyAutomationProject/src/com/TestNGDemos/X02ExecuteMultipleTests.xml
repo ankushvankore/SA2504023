@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Execute Multiple Tests">
+	<test name = "My Test">
+		<classes>
+			<class name = "com.TestNGDemos.D05TiraBeautyAssignment">
+				<methods>
+					<include name = "testMenLink"></include>
+					<include name = "testMakeUpLink"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

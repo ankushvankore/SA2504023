@@ -3,13 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGDemos.D03Before_After_Test">
+      <class name="com.TestNGDemos.D05TiraBeautyAssignment">
         <methods>
-          <include name="testSkinbae"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
+          <include name="testMenLink"/>
+          <include name="testMomnBabyLink"/>
+          <include name="testMakeUpLink"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="testSkinLink"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- com.TestNGDemos.D03Before_After_Test -->
+      </class> <!-- com.TestNGDemos.D05TiraBeautyAssignment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

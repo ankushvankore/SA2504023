@@ -1,6 +1,4 @@
-package com.TestNGDemos;
-
-import org.testng.annotations.Test;
+package com.WebDriverDemos;
 
 import java.time.Duration;
 import java.util.HashMap;
@@ -12,20 +10,27 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
-public class D06DataProviderDemo {
+public class D07AssertionDemo {
 	WebDriver driver;
-	
+	String expUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index", actUrl;
+
 	@Test(dataProvider = "getLoginData")
 	public void loginToOHRM(String un, String ps) {
 		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input")).sendKeys(un);
 		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input")).sendKeys(ps);
 		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button")).click();
+
+		actUrl = driver.getCurrentUrl();
+
+		//Assert.assertEquals(actUrl, expUrl, "Invalid credentials");
+		Assert.assertTrue(actUrl.contains("dash"), "Invalid credentials");
 	}
-	
+
 	@DataProvider
 	public Object[][] getLoginData() {
 		return new Object[][] {
@@ -35,7 +40,7 @@ public class D06DataProviderDemo {
 			new Object[] { "admin", "admin123" },
 		};
 	}
-	
+
 	@AfterMethod
 	public void logout() {
 		if (driver.getCurrentUrl().contains("dashboard")) {
@@ -57,7 +62,7 @@ public class D06DataProviderDemo {
 		pref.put("profile.password_manager_leak_detection", false);
 		ChromeOptions op = new ChromeOptions();
 		op.setExperimentalOption("prefs", pref);
-		
+
 		driver = new ChromeDriver(op);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -69,5 +74,4 @@ public class D06DataProviderDemo {
 	public void closeBrowser() {
 		driver.close();
 	}
-
 }

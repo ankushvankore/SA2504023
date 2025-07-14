@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Execute Multiple Tests">
+	<test name = "My Test">
+		<classes>
+			<class name = "com.TestNGDemos.D05TiraBeautyAssignment">
+			</class>
+			<class name = "com.Assignments.OHRM_Login_Logout">
+			</class>
+		</classes>
+	</test>
+</suite>

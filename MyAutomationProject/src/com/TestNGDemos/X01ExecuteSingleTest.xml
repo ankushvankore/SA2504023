@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Execute Single Test">
+	<test name = "My Test">
+		<classes>
+			<class name = "com.TestNGDemos.D05TiraBeautyAssignment">
+				<methods>
+					<include name = "testMomnBabyLink"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Execute single test">
+	<test name="My Test">
+		<classes>
+			<class name="com.TestNG.A01TiraBeautyAssgnmnt">
+				<methods>
+					<include name="clickmen"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name ="Execute Group">
+	<test name = "My Test">
+		<classes>
+			<class name = "com.TestNGDemos.D05TiraBeautyAssignment">
+			</class>
+		</classes>
+		<groups>
+			<run>
+				<include name = "Men"></include>
+				<include name = "Women"></include>
+			</run>
+		</groups>
+	</test>
+</suite>
