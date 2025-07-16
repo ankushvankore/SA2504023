@@ -7,8 +7,7 @@
 		</classes>
 		<groups>
 			<run>
-				<include name = "Men"></include>
-				<include name = "Women"></include>
+				<exclude name = "Men"></exclude>
 			</run>
 		</groups>
 	</test>

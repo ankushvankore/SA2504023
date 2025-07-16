@@ -1,4 +1,4 @@
-package com.WebDriverDemos;
+package com.TestNGDemos;
 
 import java.time.Duration;
 import java.util.HashMap;

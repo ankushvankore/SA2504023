@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 public class ForPriority {
 	
-	@Test(priority = 1)
+	@Test(priority = 0)
 	public void test1() {
 		System.out.println("test 1");
 	}
@@ -25,7 +25,7 @@ public class ForPriority {
 	public void test3() {
 		System.out.println("test 3");
 	}
-	@Test(groups = "Women")
+	@Test(priority = 1, groups = "Women")
 	public void test4() {
 		System.out.println("test 4");
 	}
