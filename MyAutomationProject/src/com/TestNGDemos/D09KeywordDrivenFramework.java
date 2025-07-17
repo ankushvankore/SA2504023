@@ -27,7 +27,6 @@ public class D09KeywordDrivenFramework {
 		driver.findElement(By.cssSelector(prop.getProperty("emailCss"))).sendKeys("anushka@gmail.com");
 		driver.findElement(By.xpath(prop.getProperty("phoneXPath"))).sendKeys("9898989898");
 		driver.findElement(By.xpath(prop.getProperty("addressXpath"))).sendKeys("Ludhiana");
-		
 	}
 
 	@BeforeTest
