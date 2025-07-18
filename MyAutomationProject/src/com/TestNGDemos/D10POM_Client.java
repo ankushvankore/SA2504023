@@ -17,19 +17,21 @@ public class D10POM_Client{
 	RediffRegistrationUtility r1;
 	
 	@Test
-	public void registration() {
+	public void registration() throws InterruptedException {
 		r1.setFullName("Joginder Singh");
 		r1.setRediffId("jogindersingh");
+		r1.checkAvailablity();
 		r1.setPassword("joginder123");
 		r1.retypePassword("joginder123");
 		r1.setBirthDate("06", "NOV", "1993");
 	}
 	
 	@Test
-	public void registration1()
+	public void registration1() throws InterruptedException
 	{
 		r1.setFullName("Priya");
 		r1.setRediffId("priya");
+		r1.checkAvailablity();
 		r1.setPassword("priya123");
 		r1.retypePassword("priya123");
 		r1.setBirthDate("21", "OCT", "2000");

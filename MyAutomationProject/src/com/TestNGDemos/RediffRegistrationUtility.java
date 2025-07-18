@@ -31,6 +31,12 @@ public class RediffRegistrationUtility {
 		//driver.findElement(By.xpath("//input[@placeholder=\"Enter Rediffmail ID\"]")).sendKeys(rid);
 		rediffId.sendKeys(rid);
 	}
+	public void checkAvailablity() throws InterruptedException
+	{
+		driver.findElement(By.xpath("/html/body/div[2]/div[2]/form/div/div[4]/input")).click();
+		Thread.sleep(2000);
+		System.out.println(driver.findElement(By.xpath("//span[@class='info']")).getText());
+	}
 	public void setPassword(String ps)
 	{
 		//driver.findElement(By.id("newpasswd")).sendKeys(ps);

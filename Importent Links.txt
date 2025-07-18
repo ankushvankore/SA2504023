@@ -6,3 +6,7 @@ https://testng.org/testng-eclipse-update-site
 
 TestNG Download
 https://testng.org/testng-eclipse-update-site/zipped/7.4.0.202106051955/org.testng.eclipse.updatesite.zip
+
+Apache POI
+https://archive.apache.org/dist/poi/release/bin/
+download poi-bin-5.2.3-20220909.zip this file (last 4th file)

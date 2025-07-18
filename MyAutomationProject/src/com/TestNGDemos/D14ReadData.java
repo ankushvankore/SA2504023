@@ -22,8 +22,39 @@ public class D14ReadData {
 	XSSFRow row;
 	XSSFCell cell;
 	
+	@Test (enabled = false)
+	public void readData() {
+		row = sheet.getRow(0);
+		cell = row.getCell(0);
+		
+		System.out.println(cell.getStringCellValue());
+		
+		cell = row.getCell(1);
+		System.out.println(cell.getStringCellValue());
+		
+		cell = row.getCell(2);
+		System.out.println(cell.getStringCellValue());
+		
+		System.out.println(sheet.getRow(1).getCell(0).getStringCellValue());
+		System.out.println(sheet.getRow(1).getCell(1).getStringCellValue());
+		System.out.println(sheet.getRow(1).getCell(2).getStringCellValue());
+	}
+	
 	@Test
-	public void f() {
+	public void readAllData()
+	{
+		int rows = sheet.getPhysicalNumberOfRows();
+		int cells = sheet.getRow(0).getPhysicalNumberOfCells();
+		
+		for(int i = 0; i < rows; i++)
+		{
+			row = sheet.getRow(i);
+			for(int j = 0; j < cells; j++)
+			{
+				cell = row.getCell(j);
+				System.out.println(cell.getStringCellValue());
+			}
+		}
 	}
 
 	@BeforeTest
@@ -35,7 +66,9 @@ public class D14ReadData {
 	}
 
 	@AfterTest
-	public void afterTest() {
+	public void afterTest() throws IOException {
+		wb.close();
+		fis.close();
 	}
 
 }
