@@ -20,6 +20,8 @@ public class S03LoginToOHRM {
 	    driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	}
 
+	//Valid Data
+	
 	@When("I Enter valid userName")
 	public void i_enter_valid_user_name() {
 	    driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
@@ -40,14 +42,7 @@ public class S03LoginToOHRM {
 	    Assert.assertTrue(driver.getCurrentUrl().contains("dash"));
 	}
 
-	@Given("Launch OHRM site")
-	public void launch_ohrm_site() {
-		driver = new ChromeDriver();
-	    driver.manage().window().maximize();
-	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	    
-	    driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-	}
+	//Invalid Data
 
 	@When("I Enter invalid userName")
 	public void i_enter_invalid_user_name() {
