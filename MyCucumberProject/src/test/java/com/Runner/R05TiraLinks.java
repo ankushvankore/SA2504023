@@ -16,7 +16,7 @@ public class R05TiraLinks {
 	 * Execute Multiple Scenarios	tags = "@MenLink or @MakeupLink"
 	 * Skip Single Scenario			tags = "not @SkinLink"
 	 * Skip Multiple Scenarios		tags = "not @SkinLink and not @MomLink"
-	 * Execute All Scenarios		
+	 * Execute All Scenarios		tags = "@AllLinks"
 	 */
 	
 	//publish = true will generate html report. Copy the link of report from console

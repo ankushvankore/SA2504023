@@ -14,7 +14,7 @@ import io.cucumber.java.en.*;
 public class S05TiraLinks {
 	WebDriver driver;
 	
-	@Before
+	//@Before
 	public void launchBrowser()
 	{
 		driver = new ChromeDriver();
@@ -24,7 +24,7 @@ public class S05TiraLinks {
 	    driver.get("https://www.tirabeauty.com/");
 	}
 	
-	@After
+	//@After
 	public void closeBrowser()
 	{
 		driver.close();
